@@ -1,6 +1,7 @@
 #1. Crear un menú con 5 opciones, se debe validar que la opción escogida sea 1, 2, 3, 4,
 #   5 o 6.
 
+puts "1. Cantidad de productos existentes"
 
 #2. La opción 1 permite conocer la cantidad de productos existentes. Al seleccionar esta
 #   opción, se mostrará un submenú que permitirá:

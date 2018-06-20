@@ -34,7 +34,9 @@ def twoStoneArr(string1, string2, arr)
     file.puts "<body>"
         file.puts "<p>#{string1}</p>"
         file.puts "<p>#{string2}</p>"
-        file.puts "<p>#{arr}</p>" if arr.length != 0
+        file.puts "<ol>"
+            file.puts "<li>#{arr}</li>" if arr.length != 0
+        file.puts "</ol>"
     file.puts "</body>"
     file.puts "</html>"
     file.close
@@ -54,13 +56,15 @@ def twoStArrCl(string1, string2, arr, color)
     file.puts "<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />"
     file.puts "<title>Your Website</title>"
     file.puts "<style>"
-      file.puts "body {background-color: #{color}}"
+      file.puts "p {background-color: #{color}}"
     file.puts "</style>"
   file.puts "</head>"
   file.puts "<body>"
     file.puts "<p>#{string1}</p>"
     file.puts "<p>#{string2}</p>"
-    file.puts "<p>#{arr}</p>" if arr.length != 0
+    file.puts "<ol>"
+        file.puts "<li>#{arr}</li>" if arr.length != 0
+    file.puts "</ol>"
   file.puts "</body>"
   file.puts "</html>"
   file.close

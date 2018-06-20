@@ -2,9 +2,10 @@
 #   posee.
 
 def linesReader(filename)
-    file = File.open(filename, ‘r’)
-    data = file.readlines
+    file = File.open(filename, 'r')
+    lines = file.readlines
+    puts lines.count
     file.close
 end
 
-linesReader('txtfolder/peliculas.txt')
+puts linesReader('peliculas.txt')
