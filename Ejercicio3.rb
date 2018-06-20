@@ -16,9 +16,11 @@ countwords('peliculas.txt')
 def countwords(filename, string)
     file = File.open(filename).read
     data = file.split
+    freq = 0
     data.each do |i|
-        puts i.count(string)
+        freq += 1 if i == string
     end
+    puts freq
 end
 
-countwords('peliculas.txt', 'fantasma')
+countwords('peliculas.txt', 'Episodio') # Should return 6
